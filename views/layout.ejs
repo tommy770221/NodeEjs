@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include layout/header.ejs %>
+</head>
+
+<body>
+<!-- Preloader -->
+<div class="preloader">
+    <div class="cssload-speeding-wheel"></div>
+</div>
+<div id="wrapper">
+    <%- include layout/navigation.ejs %>
+   <%- include layout/left-navigation.ejs %>
+
+    <!-- Page Content -->
+    <div id="page-wrapper">
+        <%- body %>
+        <%- include layout/sidebar.ejs %>
+        <!-- /.container-fluid -->
+        <%- include layout/footer.ejs %>
+    </div>
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+      <%- include layout/js.ejs %>
+</body>
+
+</html>
